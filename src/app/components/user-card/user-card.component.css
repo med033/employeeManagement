@@ -1,0 +1,16 @@
+.card-subtitle {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+    float: right;
+}
+
+.fa-trash-alt:before,
+.fa-trash-can:before {
+    content: "\f2ed";
+    color: red;
+}

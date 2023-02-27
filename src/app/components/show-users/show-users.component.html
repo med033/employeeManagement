@@ -1,0 +1,33 @@
+<div class="container">
+    <h6>Liste des Utilisateurs</h6>
+    <div class="actionBtn">
+      <button type="button" class="btn btn-danger" (click)="cancel()"><i class="fa-solid fa-xmark"></i> cancel</button>
+      <button type="button" class="btn btn-success" (click)="save()"><i class="fa-regular fa-floppy-disk"></i> Save</button>
+      <button type="button" class="btn btn-info" (click)="load()"><i class="fa-solid fa-spinner"></i> Load</button>
+    </div>
+   <div class="col-lg-11"> 
+     <div class="card-columns">
+        <div   *ngFor="let user of users">
+          <app-user-card (click)="openSidebar(user.id)" [childUser]="user" (newUsers)="update($event)" ></app-user-card>
+        </div>
+    </div>
+    </div>
+    
+      
+  
+  <div id="sidebar">
+    <div class="sidebar-content">
+        <div class="form-group" >
+        <label class="card-subtitle mb-2 ">NOM</label>
+        <input type="text" class="form-control mb-2" [(ngModel)]="this.userSide.name">
+      </div>
+      <div class="form-group">
+        <label class="card-subtitle mb-2 ">PRENOM</label>
+        <input type="text" class="form-control mb-2" [(ngModel)]="this.userSide.surname">
+        <div class="form-group">
+          <label for="card-subtitle mb-2 ">Nombre d'années d'expérience</label>
+          <input type="text" class="form-control mb-2" [(ngModel)]="this.userSide.years" readonly>
+        </div>
+      </div>
+      </div>
+  

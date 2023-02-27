@@ -1,0 +1,55 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  /* set the initial position to be outside the screen on the left side */
+  width: 250px;
+  height: 100%;
+  background-color: rgb(115, 134, 213);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+#sidebar.open {
+  left: 0;
+  /* move the sidebar to the left side of the screen */
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content h5 {
+  margin-top: 0;
+}
+
+.container {
+  margin-left: 18%;
+}
+
+.card {
+  margin-top: 10%;
+}
+
+.card-columns {
+  margin-top: 6%;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+}
+
+h6 {
+  margin-left: 1rem;
+}
+
+.actionBtn {
+  float: right
+}
+
+button.btn.btn-success {
+  margin: 9px;
+}

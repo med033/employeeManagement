@@ -1,0 +1,23 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* set the initial position to be outside the screen on the left side */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  #sidebar.open {
+    left: 0; /* move the sidebar to the left side of the screen */
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .sidebar-content h5 {
+    margin-top: 0;
+  }
+  
